@@ -1,5 +1,5 @@
 /*
-    Name: 
+    Name: Bryce Martin
 */
 
 :root{
@@ -74,6 +74,10 @@ header{
     background-size: contain;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
 }
 
 /* For All Headings */
@@ -137,6 +141,8 @@ nav ul{
     padding: 0;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display:flex;
+
 }
 
 nav a{
@@ -165,6 +171,10 @@ nav a span{
     position: relative;
     /* Styles were added here to arrange the content, I used top and z-index for this */
     /* TO DO */
+    top: -148px;
+    z-index: 1;
+
+
 }
 
 nav a:focus{
@@ -224,11 +234,17 @@ p{
     padding: 96px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px 32px;
+
 }
 
 #plants h3, #plants > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1/-1;
+
 }
 
 #plants section{
@@ -357,6 +373,9 @@ th:nth-of-type(even), td:nth-of-type(even){
 #social ul{
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display:grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
     width: fit-content;
     margin: 16px auto;
     list-style-type: none;
